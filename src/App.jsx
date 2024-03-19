@@ -1,7 +1,12 @@
 import "./App.css";
+import Home from "./Home";
 
 function App() {
-  return <>Rick and Morty</>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;
