@@ -6,7 +6,11 @@ const CardsList = ({ characters }) => {
       return <Card key={id} character={character} />;
     });
   };
-  return <ul>{characters && createCards()}</ul>;
+  return (
+    <ul className="flex flex-wrap gap-4 mt-4 justify-center">
+      {characters && createCards()}
+    </ul>
+  );
 };
 
 export default CardsList;
